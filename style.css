@@ -50,11 +50,13 @@ a {
   color: black;
   text-decoration: none;
   text-decoration-color: white;
+  padding: 12px;
 }
 
 a:hover {
-  color: grey;
-  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  /* text-decoration: underline; */
+  background-color: gray;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
