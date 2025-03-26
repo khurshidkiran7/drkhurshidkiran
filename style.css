@@ -41,7 +41,7 @@ nav {
 }
 
 .nav-links {
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
   font-size: 1.5rem;
 }
@@ -51,6 +51,9 @@ a {
   text-decoration: none;
   text-decoration-color: white;
   padding: 12px;
+  background-color: rgb(170, 125, 47);
+  /* font-weight: bold; */
+
 }
 
 a:hover {
@@ -179,8 +182,8 @@ section {
   margin: auto 0;
 }
 .section__pic-container img {
-  width: 350px; /* Increase the size */
-  height: 350px; /* Keep it equal to width */
+  width: 400px; /* Increase the size */
+  height: 400px; /* Keep it equal to width */
   border-radius: 50%; /* Makes it circular */
   object-fit: cover; /* Ensures the image fits well */
 }
