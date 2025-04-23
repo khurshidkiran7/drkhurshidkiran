@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <style>
+      .gallery {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows: auto;
+                grid-auto-flow: dense;
+                gap: 6px;
+               }
+
+            .gallery img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            img.four-grid-cells {
+                grid-row: span 2 / auto;
+                grid-column: span 2 / auto;
+            }
+
+            img.wide-image {
+                grid-column: span 2 / auto;
+            }
       body {
           font-family: Arial, sans-serif;
           background-color: #dfb45d;
@@ -85,7 +107,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('resume-example1.pdf')"
+            onclick="window.open('resume-example.pdf')"
           >
             Download CV
           </button>
@@ -109,7 +131,7 @@
           /> -->
         </div>
         <div>
-          <p style="color: rgb(0, 0, 0);text-align: justify;font-family: 'Times New Roman', Times, serif;">
+          <p style="color: text-align: justify;font-family: 'Times New Roman', Times, serif;">
             I am Dr. Kiran Khurshid (PAS), a dedicated academic and researcher in Political Science. 
             I earned my Ph.D. from Government College University, Lahore, in 2018, focusing on 
             an evaluation of land revenue. My M.Phil. research explored Dependencia: A Case Study 
@@ -164,13 +186,8 @@
           </div> -->
         </div>
       </div>
-      <img
-        src="arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
+    
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Professional Profile</h1>
@@ -181,6 +198,7 @@
             <div class="article-container">
               <article>
                 <img
+
                   src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
@@ -681,7 +699,90 @@
   </section> -->
 
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
+      
+      <h1 style="color: black; font-size: 2rem;text-align: center;margin-bottom: 10px;">Gallery</h1>
+      <div class="gallery">
+        <img class="four-grid-cells"
+            src="image1.jpeg"
+            alt="Northern Winter Sky Image" />
+
+        <img
+            src="image2.jpeg"
+            alt="Shining Stars Image" />
+
+        <img class="wide-image"
+            src="image3.jpeg"
+            alt="A River Flowing Image" />
+
+        <img
+            src="image4.jpeg"
+            alt="A cloudy Mountain Image" />
+
+        <img
+            src="image5.jpeg"
+            alt="A Winter Rainbow Image" />
+
+        <img class="wide-image"
+            src="image6.jpeg"
+            alt="A Clean Mountain Lake" />
+
+        <img
+            src="image7.jpeg"
+            alt="Shining Stars Image" />
+            <img class="four-grid-cells"
+            src="image1.jpeg"
+            alt="Northern Winter Sky Image" />
+
+        <img
+            src="image8.jpeg"
+            alt="Shining Stars Image" />
+
+        <img class="wide-image"
+            src="image9.jpeg"
+            alt="A River Flowing Image" />
+
+        <img
+            src="image11.jpeg"
+            alt="A cloudy Mountain Image" />
+
+        <img
+            src="image12.jpeg"
+            alt="A Winter Rainbow Image" />
+
+        <img class="wide-image"
+            src="image13.jpeg"
+            alt="A Clean Mountain Lake" />
+
+        <img
+            src="image14.jpeg"
+            alt="Shining Stars Image" />
+      
+            <img
+            src="image15.jpeg"
+            alt="Shining Stars Image" />
+
+        <img class="wide-image"
+            src="image20.jpeg"
+            alt="A River Flowing Image" />
+
+        <img
+            src="image16.jpeg"
+            alt="A cloudy Mountain Image" />
+
+        <img
+            src="image17.jpeg"
+            alt="A Winter Rainbow Image" />
+
+        <img class="wide-image"
+            src="image18.jpeg"
+            alt="A Clean Mountain Lake" />
+
+        <img
+            src="image19.jpeg"
+            alt="Shining Stars Image" />
+      
+    </div>
+    <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
