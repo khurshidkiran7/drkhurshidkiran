@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+     
+  </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <!-- <div class="logo">Dr. Kiran Khurshid</div> -->
+      <div>
+        <ul class="nav-links">
+          <li style="font-size: 2rem;"><a href="#about" style="color: rgb(255, 255, 255);border-radius: 50px;">About</a></li>
+          <li style="font-size: 2rem;"><a href="#experience" style="color: rgb(255, 255, 255);border-radius: 50px;">Experience</a></li>
+          <li style="font-size: 2rem;"><a href="#projects" style="color: rgb(255, 255, 255);border-radius: 50px;">Achievements and Distinctions</a></li>
+          <li style="font-size: 2rem;"><a href="#contact" style="color: rgb(255, 255, 255);border-radius: 50px;">Publications & Articles</a></li>
+          <li style="font-size: 2rem;"><a href="#gallery" style="color: rgb(255, 255, 255);border-radius: 50px;">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Dr. Kiran Khurshid</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Achievements & Distinctions</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Publications & Articles </a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+<img src="profile-pic.jpeg" alt="John Doe profile picture" />      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Dr. Kiran Khurshid</h1>
+        <p class="section__text__p2">Acting as  Director General(DGM&E)</p>
+        <div class="btn-container">
+         
+
+
+          <button class="btn btn-color-2" onclick="openCV()">
+            Download CV
+          </button>
+
+
+
+
+          <button class="btn btn-color-1" onclick="">
+            Contact Info
+          </button>
+          
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <!-- <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          /> -->
+        </div>
+        <div>
+          <p style="color: text-align, justify;font-family: 'Times New Roman', Times, serif;">
+            I am Dr. Kiran Khurshid (PAS), a dedicated academic and researcher in Political Science. 
+            I earned my Ph.D. from Government College University, Lahore, in 2018, focusing on 
+            an evaluation of land revenue. My M.Phil. research explored Dependencia: A Case Study 
+            of Pakistan (1981-1991), and I hold a Master of Arts in Political Science from the same 
+            institution. My academic journey has been centered on governance, international relations, 
+            and political thought, shaping my expertise in political analysis and research.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img style="width: 200px;height: 200px;margin-top: px;"
+            src="profile-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers" style="margin-top: -20%;">
+            <div class="details-container" style="background-color: rgb(217, 217, 217);">
+              <img
+                src="experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Civil Service</h3>
+              <p>Currently serving as <br />DGM&E for almost 1 year</p>
+            </div>
+            <div class="details-container" style="background-color: rgb(217, 217, 217);width: 800px;">
+              <img
+                src="education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>PhD in Political Sciences<br />M. Phil in Political Sciences <br/> Master of Arts in Political Sciences <br/> Graduation in Political Sciences</p>
+            </div>
+          </div>
+          <!-- <div class="text-container" >
+            <p style="color: rgb(0, 0, 0);">
+              I am Dr. Kiran Khurshid, a dedicated academic and researcher in Political Science. 
+              I earned my Ph.D. from Government College University, Lahore, in 2018, focusing on 
+              an evaluation of land revenue. My M.Phil. research explored Dependencia: A Case Study 
+              of Pakistan (1981-1991), and I hold a Master of Arts in Political Science from the same 
+              institution. My academic journey has been centered on governance, international relations, 
+              and political thought, shaping my expertise in political analysis and research.
+            </p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    
+    <div id="experience" style="margin-top: -20%;">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title" >Professional Profile</h1>
+      <div class="container">
+      <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container" style="background-color: rgb(217, 217, 217);">
+            <h2 class="experience-sub-title">Organizations Served</h2>
+            <div class="article-container">
+      <article>
+        <a href="https://dgme.punjab.gov.pk/" style="background-color: rgb(217, 217, 217);">
+          <img
+            src="dgmeLogo.jpg"
+            alt="Experience icon"
+            class="icon"
+            style="width: 45px; height: 45px;" 
+          />
+        </a>
+        <div>
+          <a href="https://dgme.punjab.gov.pk/" 
+            style="text-decoration: none; color: inherit; padding: 0;">
+            <h3 style="margin-left: -7px;">Director General (M&E), Lahore</h3>
+          </a>
+          <p class="padding-y">June 2024 to till Date</p>
+        </div>
+      </article>
+              <article>
+                <img
+                  src="images.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 50x;height: 50px;"
+                />
+                <div>
+                  <h3>Senior Management Course</h3>
+                  <p>Oct 2023-Jan 2024</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images2.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 50x;height: 50px;"
+                />
+                <div>
+                  <h3>Managing Director (MD), Punjab Health Foundation</h3>
+                  <p>July 2019-May,2022</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images3.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 50x;height: 50px;"
+                />
+                <div>
+                  <h3>Registrar, Cooperative Societies, Punjab Lahore  </h3>
+                  <p>June 2018- July 2019</p>
+                </div>
+              </article>
+              
+            </div>
+            <div class="article-container">
+              <article>
+                <img
+                  src="images4.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 50x;height: 50px;"
+
+                />
+                <div>
+                  <h3>DG Child Protection & Welfare Bureau (CPWB)</h3>
+                  <p>Sep 2017- June 2018</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images5.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 50x;height: 50px;"
+
+                />
+                <div>
+                  <h3>Additional Secretary Finance </h3>
+                  <p>June 2016 – Sep 2017</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images6.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 50x;height: 50px;"
+                />
+                <div>
+                  <h3>Mid-Career Management Course</h3>
+                  <p>Feb 2016 – May 2016</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images7.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 63x;height: 63px;"
+                />
+                <div>
+                  <h3>District Coordination Officer, Sheikhupura</h3>
+                  <p>June 2015- Feb-2016</p>
+                </div>
+              </article>
+              
+            </div>
+            <div class="article-container">
+              <article>
+                <img
+                  src="images8.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 45x;height: 45px;"
+                />
+                <div>
+                  <h3>Deputy Secretary (Confidential), S&GAD, Government of Punjab</h3>
+                  <p>Feb 2013-May 2015</p>
+                </div>
+              </article>
+             <article>
+                <img
+                  src="images14.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 50x;height: 50px;"
+                />
+                <div>
+                  <h3>Additional District Collector/Administrator, Sheikhoupura</h3>
+                  <p>April 2011  to 2013</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="images11.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 63x;height: 63px;"
+                />
+                <div>
+                  <h3>Deputy Secretary , HEC Punjab</h3>
+                  <p>Nov 2010 to March 2011</p>
+                </div>
+              </article>
+              
+               <article>
+                <img
+                  src="images13.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 50x;height: 50px;"
+
+                />
+                <div>
+                  <h3>District Officer(Revenue) / Administrator</h3>
+                  <p>April 2010 to  Oct 2010</p>
+                </div>
+              </article>
+            </div>
+            
+            <div class="article-container">
+              <article>
+                <img
+                  src="images12.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 45x;height: 45px;"
+                />
+                <div>
+                  <h3>Deputy District Officer (Revenue)/Assistant Commisioner, Faislabad</h3>
+                  <p>2008 to 2010</p>
+                </div>
+              </article>
+             
+              <article>
+                <img
+                  src="images10.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 50x;height: 50px;"
+                />
+                <div>
+                  <h3>Assistant Accountant general, Punjab</h3>
+                  <p>Jan 2005 to October 2005</p>
+                </div>
+              </article>
+               <article>
+                <img
+                  src="images9.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 50x;height: 50px;"
+
+                />
+                <div>
+                  <h3>Lecturer, GC university Lahore</h3>
+                  <p>2003 to 2007</p>
+                </div>
+              </article>
+               </article>
+               <article>
+                <!-- <img
+                  src="images9.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                  style="width: 50x;height: 50px;"
+
+                /> -->
+                <div>
+                  <h3></h3>
+                  <p></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 25px;">
+      <h2 style="font-size: 3rem;color: black;">Achievements & Recognitions</h2>
+      <div class="timeline">
+          <div class="timeline-item">
+              <h3>1992</h3>
+              <p>Topper in all Punjab District Educational Competition for 9th Class Arts Group</p>
+          </div>
+          <div class="timeline-item">
+              <h3>1999</h3>
+              <p>Senior Vice-President of Ravians Quiz Society, Government College University</p>
+              <p>General Secretary, Political Science Society, Government College, Lahore</p>
+          </div>
+          <div class="timeline-item">
+              <h3>2000</h3>
+              <p>1st ever President, Political Science Society, Government College, Lahore</p>
+              <p>Winner Inter Collegiate Quiz Competition, Lahore</p>
+              <p>Winner in 2 quiz competitions at Pakistan Television</p>
+          </div>
+          <div class="timeline-item">
+              <h3>2005-09</h3>
+              <p>Supervised multiple M.Phil. Theses at Political Science Department, GCU, Lahore</p>
+          </div>
+          <div class="timeline-item">
+              <h3>2008-2010</h3>
+              <p>Received multiple Letters of Appreciation from DCO Faisalabad for Ramazan, Moharram arrangements, delegation duties, price control, and revenue collection.</p>
+          </div>
+          <div class="timeline-item">
+              <h3>2010</h3>
+              <p>Finance Secretary, District Management Group Association, Lahore</p>
+          </div>
+          <div class="timeline-item">
+              <h3>2012</h3>
+              <p>Received Outstanding Officer Certificate & Cash Prize from CEO of the Province</p>
+          </div>
+          <div class="timeline-item">
+              <h3>2012-14</h3>
+              <p>Female Vice President, Old Ravians Union, Government College, Lahore</p>
+          </div>
+          <div class="timeline-item">
+              <h3>2015</h3>
+              <p>Letter of appreciation from Punjab Healthcare Commission for Anti-Quackery Campaign</p>
+          </div>
+          <div class="timeline-item">
+              <h3>2016</h3>
+              <p>Mid-Career Management Course (MCMC)</p>
+          </div>
+          <div class="timeline-item">
+              <h3>2023</h3>
+              <p>Senior Management Course (SMC)</p>
+          </div>
+      </div>
+  </div>
+
+
+ <div class="container" style="background-color: rgb(217, 217, 217); margin-top: 50px; margin-bottom: 50px;">
+  <h2 style="font-size: 3rem;color: black;">Publications & Articles</h2>
+
+  <div class="container-card">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="img-wrapper" style="--bg:url('bookcover1.jpg')">
+        <img src="bookcover1.jpg" alt="Book 1">
+      </div>
+      <h3>Sadequain Gallery: An ode to the Artist</h3>
+      <p>Publish Year: 2025</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="img-wrapper" style="--bg:url('bookcover2.jpg')">
+        <img src="bookcover2.jpg" alt="Book 2">
+      </div>
+      <h3>National Management Course: A Journey Together</h3>
+      <p>Publish Year: 2025</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="img-wrapper" style="--bg:url('bookcover3.jpg')">
+        <img src="bookcover3.jpg" alt="Book 3">
+      </div>
+      <h3>Pakistan Administrative Staff College: Rise of a Premier Civil Service Training Institution</h3>
+      <p>Publish Year: 2025</p>
+    </div>
+<!-- Card 4 -->
+    <div class="card"> 
+      <div class="img-wrapper" style="--bg:url('bookcover5.jpg')">
+        <img src="bookcover5.jpg" alt="Book 5" >
+      </div>
+      <h3>A Collection of Delegation of Powers Notifications of the Cooperatives Department Punjab</h3>
+      <p>Publish Year: 2024</p>
+    </div>
+    <!-- Card 5 -->
+    <div class="card">
+      <div class="img-wrapper" style="--bg:url('bookcover4.jpg')">
+        <img src="bookcover4.jpg" alt="Book 4">
+      </div>
+      <h3>A Compendium of Standing Orders and Directions under sections 44-D of the Cooperative Societies Act, 1925</h3>
+      <p>Publish Year: 2023</p>
+    </div>
+
+    
+
+    <!-- Card 6 -->
+    <div class="card">
+      <div class="img-wrapper" style="--bg:url('bookcover6.jpg')">
+        <img src="bookcover6.jpg" alt="Book 6" >
+      </div>
+      <h3>An Anthology on the properties of the Cooperatives institutions in Punjab</h3>
+      <p>Publish Year: 2020</p>
+    </div>
+    <!-- Card 7 -->
+ <div class="card" onclick="openDSpace()">
+  <div class="img-wrapper" style="--bg:url('paperPublishBg.jpg')">
+    <img src="paperPublish.png" alt="paperPublish" >
+  </div>
+  <h3 class="clickable">Political Economy of Growth: An Evaluation of Revenue Department/Administration with Special Focus on District Faisalabad</h3>
+  <p>Publish Year: 2018</p>
+</div>
+
+    <!-- Card 8 -->
+    <div class="card" onclick="opennewLetterPDF()">
+      <div class="img-wrapper" style="--bg:url('annualReport2016-17.jpg')">
+        <img src="annualReport2016-17.jpg" alt="annualReport2016-17" >
+      </div>
+      <h3 class="clickable">Annual Report 2016-17: Child Protection & Welfare Bureau</h3>
+      <p>Publish Year: 2026-17</p>
+    </div>
+
+    <!-- Card 8 -->
+ <div class="card" onclick="opennewLetterPDF()">
+  <div class="img-wrapper" style="--bg:url('newsLetter.jpg')">
+    <img src="newsLetter.jpg" alt="newsLetter" >
+  </div>
+  <h3 class="clickable">Monitoring Progress, Tracking Success: NewsLetter (DGM&E)</h3>
+  <p>Publish Year: 2025</p>
+</div>
+
+
+
+<script>
+
+</script>
+
+   
+
+  </div>
+</div>
+        
+
+
+
+
+  <div class="container" style="margin-top: 20px;">
+    <h2 style="font-size: 3rem;color: black;">Publications & Articles</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+  <h2 style="padding-bottom: 10px;">Books Launched at NSPP</h2>
+  <div>
+    <div class="sg-header-section">
+      <h1 class="sg-heading">Sadequain Gallery - An Ode to the Artist</h1>
+      <div class="sg-button-group">
+        <a href="https://www.facebook.com/share/18vXyNsxLn/?mibextid=wwXIfr"
+          target="_blank" class="sg-btn sg-fb-btn">Facebook Post</a>
+        <a href="https://nspp.gov.pk/launch-exlusive-book-sadeqain-gallery/"
+          target="_blank" class="sg-btn sg-site-btn">NSPP Book Launch Event</a>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 20px;">About the Book</h3>
+    <p style="margin-top: 10px; text-align: justify;">
+      I am absolutely delighted to share the momentous occasion of the inauguration of my book,
+      <b>Sadequain Gallery – An Ode to the Artist</b>, in a prestigious ceremony held at the esteemed
+      National School of Public Policy on 20th March 2025.People from the art, academia and civil service attended the event. It is both a great privilege and an immense honour to have been entrusted with this endeavour by the Honourable Rector, Dr Ijaz Munir. Both the establishment of Sadequain Gallery by him in January 2023 and now documentation of this book on 20th March 2025 are testament to his dedication to the art and culture.
+    </p>
+
+    <!-- Responsive 2-per-row Gallery -->
+    <div class="image-row">
+      <img src="gallery.jpeg" alt="Gallery Main">
+      <img src="book7.jpeg" alt="Book Image">
+    </div>
+    <div class="image-row">
+      <img src="gallery4.jpeg" alt="Gallery Side">
+      <img src="gallery5.jpeg" alt="Gallery Art">
+      </div>
+   <div class="special-gallery">
+  <div class="left-column">
+    <img src="gallery6.jpeg" alt="Gallery Display">
+    <img src="gallery3.jpeg" alt="Exhibition">
+  </div>
+  <div class="right-column">
+    <img src="gallery7.jpeg" alt="Artwork">
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+
+       
+      <div class="timeline-item">
+  <div class="sg-header-section">
+    <h1 class="sg-heading">April 29 2025 : A Journey Together</h1>
+    <div class="sg-button-group">
+      <a href="https://youtu.be/dhC6daRvMaQ" target="_blank" class="sg-btn sg-yt-btn">Book Briefing Video</a>
+    </div>
+  </div>
+
+  <h3 style="margin-top: 20px;">About the Book</h3>
+  <p style="margin-top: 10px;text-align: justify;">
+    NSPP / Book Launch Ceremony Book Launch Ceremony of Author Kiran Khurshid’s <b> "National Management Course – A Journey Together" </b> Held at National School of Public Policy NSPP has been rendering valuable services for national development since its inception. The author’s book is commendable. – Rector Dr. Ijaz Munir Lahore, April 29 (APP): A grand launch ceremony was held on Tuesday at the National School of Public Policy (NSPP) for the book "National Management Course – A Journey Together" by author Kiran Khurshid. The book was written at the suggestion of Rector NSPP, Dr. Ijaz Munir, with the aim of highlighting the institution's role in the training of civil service officers. This publication is part of a series of initiatives led by the Rector. The event featured speeches by Rector Dr. Ijaz Munir, former Dean of the Staff College Naeem Aslam, former Principal of the Pakistan Administrative Staff College Khalid Mahmood, and former Federal Secretary Suhail Ahmed, who all shared their views on the book. Faculty members, instructors, and officers from the Staff College also attended the ceremony.
+  </p>
+
+  <div class="image-row">
+    <img src="book0.jpeg" alt="First Image">
+    <img src="books2.jpeg" alt="Second Image">
+  </div>
+  <div class="image-row">
+    <img src="book1.jpeg" alt="Third Image">
+    <img src="Poetry.jpeg" alt="Fourth Image">
+  </div>
+  <div class="image-row">
+    <img src="book2.jpeg" alt="Image">
+    <img src="book3.jpeg" alt="Image">
+  </div>
+  <div class="image-row">
+    <img src="book4.jpeg" alt="Image">
+    <img src="book5.jpeg" alt="Image">
+  </div>
+  <div class="image-row">
+    <img src="book6.jpeg" alt="Image">
+    <img src="book7.jpeg" alt="Image">
+  </div>
+</div>
+   
+      <div class="timeline-item">
+  <div class="sg-header-section">
+    <h1 class="sg-heading">May 20 2025 : Rise of a Premier Civil Service Training Institute (1960–2025)</h1>
+    <div class="sg-button-group">
+      <a href="https://www.youtube.com/watch?v=-JqySsrvhfk" target="_blank" class="sg-btn sg-yt-btn">Book Briefing Video</a>
+      <a href="https://www.facebook.com/share/1KugaBmK1Q/?mibextid=wwXIfr" target="_blank" class="sg-btn sg-fb-btn">Facebook Post</a>
+    </div>
+  </div>
+
+  <h3 style="margin-top: 20px;">About the Book</h3>
+  <p style="margin-top: 10px;text-align: justify;">
+    Pakistan Administrative Staff College: Rise of a Premier Civil Service Training Institute (1960–2025)”. All praise and gratitude are due to the Almighty Allah, who graciously endowed me with the fortitude to undertake a task of considerable significance and honour — that of authoring a trilogy of publications for the esteemed National Institute of Public Policy. These include Pakistan Administrative Staff College: Rise of a Premier Civil Services Training Institution (1960–2025), following my earlier works, Sadequain – An Ode to the Artist and National Management Course: A Journey Together- all these publications completed within 15 months. I am profoundly indebted to the honourable Rector, Dr Ijaz Munir Sahib, whose enlightened and visionary stewardship afforded me the rare privilege of contributing intellectually to this noble enterprise — the chronicling of the rich legacy, institutional memory, and oft-unspoken narrative of this venerable institution. The experience of penning these volumes has granted me a deeper appreciation of the majesty and gravitas of this distinguished establishment. It has, in turn, inspired within me a renewed sense of duty — to become a more effective and purposeful instrument within the great machinery of the bureaucracy, working steadfastly to propel our beloved Pakistan toward a future marked by sustainable progress and enduring prosperity. </p>
+
+  <div class="image-row">
+    <img src="booke.jpeg" alt="First Image">
+    <img src="booke2.jpeg" alt="Second Image">
+  </div>
+    <div class="image-row">
+    <img src="booke4.jpeg" alt="Third Image">
+    <img src="booke3.jpeg" alt="Fourth Image">
+  </div>
+
+  <div class="image-row">
+    <img src="booke1.jpeg" alt="Image">
+    <img src="booke5.jpeg" alt="Image">
+  </div>
+  <div class="image-row">
+    <img src="booke6.jpeg" alt="Image">
+    <img src="booke7.jpeg" alt="Image">
+  </div>
+  <div class="image-row">
+    <img src="booke8.jpeg" alt="Image">
+    <img src="booke9.jpeg" alt="Image">
+  </div>
+  <div class="image-row">
+    <img src="booke10.jpeg" alt="Image">
+    <img src="booke11.jpeg" alt="Image">
+  </div>
+  <div class="image-row">
+    <img src="booke13.jpeg" alt="Image">
+    <img src="booke12.jpeg" alt="Image">
+  </div>
+</div>
+
+        <br/>
+        <h2 style="padding-bottom: 10px;">Publications & Articles List</h2>
+      <div class="timeline-item">
+          <h3>2004</h3>
+          <p>Dec 2004	Multinational Corporations as Corporate Citizens, printed in Foreign Affair Digest, Lahore</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2005</h3>
+          <p>Foreign Aid and Its Implications for Pakistan, printed in Foreign Affair Digest, Lahore</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2009</h3>
+          <p>A Gazetteer by the Native 	</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2009</h3>
+          <p>A Compilation of Revenue Estates with Special Focus on Tehsil Sadar, Faisalabad (with site maps)</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2011</h3>
+          <p>A Treatise on the Civil Service of Pakistan: A Structural-Functional History (1601-2011)</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2012</h3>
+          <p>Annual Report on Performance of Tehsil Municipal Administration, Sheikhupura</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2017</h3>
+          <p>An Anthology on the properties of the Cooperatives institutions in Punjab</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2018</h3>
+          <p>A Collection of Delegation of Powers Notifications of the Cooperatives Department Punjab</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2018</h3>
+          <p>A Compendium of Standing Orders and Directions under sections 44-D of the Cooperative Societies Act, 1925</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2025</h3>
+          <p>A Completion of “Sadequain Gallery: An ode to the Artist”</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2025</h3>
+          <p>A Completion of “National Management Course: A Journey Together”</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2025</h3>
+          <p>A Completion of “Pakistan Administrative Staff College: Rise of a Premier Civil Service Training
+Institution”</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2025</h3>
+          <p>DGM&E Newsletter </p>
+      </div>
+  </div>
+</div>
+      </div>
+
+      
+ 
+
+    <section id="contact">
+      
+      <h1 style="color: black; font-size: 2rem;text-align: center;margin-bottom: 10px;">Gallery & Events</h1>
+      <img class="wide-image"  src="image9.jpeg" style="width: 100%;" alt="A River Flowing Image"/>
+      <div class="gallery1">
+
+        <div class="image-row">
+          <img src="image1.jpeg" alt="First Image">
+          <img src="image2.jpeg" alt="Second Image">
+        </div>
+        <div class="image-row">
+          <img src="image3.jpeg" alt="First Image" style="height: 550px;">
+          <img src="image4.jpeg" alt="Second Image" style="height: 550px;">
+        </div>
+        <div class="image-row">
+          <img src="image5.jpeg" alt="First Image">
+          <img src="image6.jpeg" alt="Second Image">
+        </div>
+        <div class="image-row">
+          <img src="image7.jpeg" alt="First Image" style="height: 550px;">
+          <img src="image8.jpeg" alt="Second Image" style="height: 550px;">
+        </div>
+        <div class="image-row">
+          <img src="image21.jpeg" alt="First Image" style="height: 550px;">
+          <img src="image11.jpeg" alt="Second Image" style="height: 550px;">
+        </div>
+        <div class="image-row">
+          <img src="image12.jpeg" alt="First Image" style="height: 550px;">
+          <img src="image13.jpeg" alt="Second Image" style="height: 550px;">
+        </div>
+        <div class="image-row">
+          <img src="image14.jpeg" alt="First Image" style="height: 550px;">
+          <img src="image15.jpeg" alt="Second Image" style="height: 550px;">
+        </div>
+        <div class="image-row">
+          <img src="image20.jpeg" alt="First Image" style="height: 550px;">
+          <img src="image16.jpeg" alt="Second Image" style="height: 550px;">
+        </div>
+        <div class="image-row">
+          <img src="image17.jpeg" alt="First Image" style="height: 550px;">
+          <img src="image18.jpeg" alt="Second Image" style="height: 550px;">
+        </div>
+        <div class="image-row">
+          <img src="image19.jpeg" alt="First Image" style="height: 550px;">
+          <img src="image22.jpeg" alt="Second Image" style="height: 550px;">
+        </div>
+        <div class="image-row">
+          <img src="image23.jpeg" alt="First Image" style="height: 550px;">
+          <img src="image25.jpeg" alt="Second Image" style="height: 550px;">
+        </div>
+        <div class="image-row">
+          <img src="image26.jpeg" alt="First Image" style="height: 550px;">
+          <img src="image2.jpeg" alt="Second Image" style="height: 550px;">
+        </div>
+
+    </div>
+
+    <h1 style="color: black; font-size: 2rem;text-align: center;margin-bottom: 10px;margin-top: 30px;">RTMES : A Digital  Technological Solution of Future </h1>
+    <p style="text-align: justify;"> <span style="font-weight: bold; text-decoration: underline;"> As per the direction & under the supervision of DG Dr. Kiran Khusrhid RTMES has been developed.  </span> The GIS-Based Mapping System for Monitoring and Tracking aims to leverage Geographic Information System (GIS) 
+      technology to enhance the capabilities of the Director General Monitoring and Evaluation (DG M&E) Department in
+       monitoring, evaluating, and managing various projects and activities. This system will provide real-time data 
+       visualization, tracking, and analysis tools to improve decision-making processes and operational efficiency. In today's
+        dynamic and complex operational environment, having access to real-time, spatially-enabled data is crucial for effective
+         monitoring and evaluation. The GIS-Based Monitoring and Tracking System aims to transform how we oversee projects,
+          track resources, and evaluate outcomes by integrating advanced GIS capabilities into our existing frameworks.</p>
+          <h3>Video For Introduciton of RTMES & Media News</h3>
+        <p style="margin-top: 20px;"><a href="https://youtu.be/KFW-ukFdU8I" >https://youtu.be/KFW-ukFdU8I</a></p>
+        <p style="margin-top: 40px;margin-bottom: 20px;"><a href="https://youtu.be/b1sxzNgabBM">https://youtu.be/b1sxzNgabBM</a></p>
+        <img src="rtme1.jpeg" alt="">
+        <div class="image-row">
+          <img src="news1.png" alt="First Image">
+          <img src="news2.png" alt="Second Image">
+        </div>
+        <div class="image-row">
+          <img src="news3.png" alt="First Image">
+          <img src="news4.png" alt="Second Image">
+        </div>
+        <div class="image-row">
+          <img src="monitoring1.png" alt="First Image">
+          <img src="monitoring2.png" alt="Second Image">
+        </div>
+        <div class="image-row">
+          <img src="monitoring3.png" alt="First Image">
+          <img src="monitoring4.png" alt="Second Image">
+        </div>
+        <div class="image-row">
+          <img src="monitoring5.png" alt="First Image">
+          <img src="monitoring6.png" alt="Second Image">
+        </div>
+        <div class="image-row">
+          <img src="monitoring7.png" alt="First Image">
+          <img src="monitoring8.png" alt="Second Image">
+        </div>
+        <div class="image-row">
+          <img src="monitoring9.png" alt="First Image">
+          <img src="monitoring1.png" alt="Second Image">
+        </div>
+        <div class="image-row">
+          <img src="rtme2.jpeg" alt="First Image">
+          <img src="rtme3.jpeg" alt="Second Image">
+        </div>
+        <div class="image-row">
+          <img src="paper1.jpeg" alt="First Image">
+          <img src="paper2.jpeg" alt="Second Image">
+        </div>
+        <div class="image-row">
+          <img src="paper3.jpeg" alt="First Image">
+          <img src="paper4.jpeg" alt="Second Image">
+        </div>
+        <div class="image-row">
+          <img src="paper5.jpeg" alt="First Image">
+          <img src="paper6.jpeg" alt="Second Image">
+        </div>
+        <div class="image-row">
+          <img src="paper7.jpeg" alt="First Image">
+          <img src="paper8.jpeg" alt="Second Image">
+        </div>
+    
+    </div>
+
+    <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">kkhurshid@student.unimelb.edu.au</a></p>
+        </div>
+        <div class="contact-info-container">
+          <!-- <img
+            src="linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          /> -->
+          <!-- <p><a href="https://www.linkedin.com/in/kiran-khurshid-929763234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></p> -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Achievements & Distinctions</a></li>
+            <li><a href="#contact">Publications & Articles</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Dr. Kiran Khurshid. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
