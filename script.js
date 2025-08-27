@@ -5,13 +5,13 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 function openCV() {
-  window.open("pdfs/Resume.pdf", "_blank"); // open in new tab
+  window.open("Resume.pdf", "_blank"); // open in new tab
 }
 function opennewLetterPDF() {
-  window.open("pdfs/Newsletter-DGME.pdf", "_blank");
+  window.open("Newsletter-DGME.pdf", "_blank");
 }
 function openannualreportPDF() {
-  window.open("pdfs/AnnualReport-DGME-2016-17.pdf", "_blank");
+  window.open("AnnualReport-DGME-2016-17.pdf", "_blank");
 }
 function openDSpace() {
   window.open(
