@@ -11,7 +11,7 @@ function opennewLetterPDF() {
   window.open("Newsletter-DGME.pdf", "_blank");
 }
 function openannualreportPDF() {
-  window.open("AnnualReport-DGME-2016-17.pdf", "_blank");
+  window.open("annualReport-2016-17.pdf", "_blank");
 }
 function openDSpace() {
   window.open(
@@ -19,3 +19,21 @@ function openDSpace() {
     "_blank"
   );
 }
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const targetId = card.getAttribute("data-target");
+    const target = document.getElementById(targetId);
+
+    const headerOffset = 80; // agar sticky header hai
+    const elementPosition = target.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+});
