@@ -353,12 +353,12 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  /* border: rgb(53, 53, 53) 0.1rem solid; */
+  /* border-color: rgb(163, 163, 163); */
   text-align: center;
 }
 
@@ -492,4 +492,311 @@ footer p {
 }
 .padding-y {
   padding: 2px 0;
+}
+
+/* Container */
+.container-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image wrapper for fixed ratio */
+.card .img-wrapper {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* ek poster style ratio: portrait look */
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Image styling */
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Title */
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin: 12px 10px 4px;
+}
+
+.card h3.clickable:hover {
+  text-decoration: underline; /* or change color */
+  color: #333; /* highlight on hover */
+}
+
+/* Publish Date */
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+.card .img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Background blurred image */
+.card .img-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--bg); /* yeh line add karo */
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px);
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+/* Foreground (actual book cover) */
+.card .img-wrapper img {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.sg-header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Responsive wrap */
+  gap: 15px;
+  padding: 10px 20px;
+}
+
+/* Heading */
+.sg-heading {
+  font-size: 24px;
+  margin: 0;
+  color: #222;
+  flex: 1;
+}
+
+/* Button container */
+.sg-button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Base button */
+.sg-btn {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: inline-block;
+}
+
+/* Facebook button */
+.sg-fb-btn {
+  background: #1877f2;
+}
+/* YouTube button */
+.sg-yt-btn {
+  background: #ff0000; /* YouTube Red */
+}
+
+/* NSPP button */
+.sg-site-btn {
+  background: #28a745;
+}
+
+/* Hover animation */
+.sg-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 600px) {
+  .sg-header-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sg-button-group {
+    width: 100%;
+  }
+
+  .sg-btn {
+    flex: 1;
+    text-align: center;
+  }
+}
+/* //////////////// */
+.special-gallery {
+  display: flex;
+  gap: 20px; /* Space between columns */
+  margin-top: 50px;
+  align-items: stretch; /* Ensures equal height columns */
+}
+
+.left-column,
+.right-column {
+  flex: 1; /* Equal width */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-column img {
+  flex: 1; /* Each image takes half of column height */
+  object-fit: cover; /* Crop to fit nicely */
+  width: 100%;
+  border-radius: 10px;
+}
+
+.right-column img {
+  height: 100%; /* Fill full column height */
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive for mobile: stack images */
+@media (max-width: 768px) {
+  .special-gallery {
+    flex-direction: column;
+  }
+  .left-column,
+  .right-column {
+    flex: unset;
+  }
+  .right-column img {
+    height: auto;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  gap: 6px;
+}
+.rtmes {
+  display: grid;
+  grid-template-columns: repeat(2);
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  gap: 6px;
+}
+.rtmes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img.four-grid-cells {
+  grid-row: span 2 / auto;
+  grid-column: span 2 / auto;
+}
+
+img.wide-image {
+  grid-column: span 2 / auto;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dfb45d;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(217, 217, 217);
+}
+h2 {
+  text-align: center;
+  color: #333;
+}
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+.timeline-item {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border-left: 3px solid #007bff;
+}
+.timeline-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #007bff;
+}
+.timeline-item h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #003153;
+}
+.timeline-item p {
+  margin: 5px 0 0;
+  color: #555;
+}
+.image-row {
+  display: flex;
+  flex-wrap: wrap; /* line break allow karega */
+  justify-content: center;
+  gap: 20px; /* Space between images */
+  margin-top: 50px;
+}
+
+.image-row img {
+  width: 100%; /* By default (mobile) 1 image per row */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Laptop/Desktop view (min-width: 768px ya jahan aap chahen) */
+@media (min-width: 768px) {
+  .image-row img {
+    width: 48%; /* 2 images per row */
+  }
 }

@@ -8,93 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <style>
-      .gallery {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-auto-rows: auto;
-                grid-auto-flow: dense;
-                gap: 6px;
-               }
-              .rtmes{
-                display: grid;
-                grid-template-columns: repeat(2);
-                grid-auto-rows: auto;
-                grid-auto-flow: dense;
-                gap: 6px;
-              }
-              .rtmes img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-              }
-            .gallery img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            img.four-grid-cells {
-                grid-row: span 2 / auto;
-                grid-column: span 2 / auto;
-            }
-
-            img.wide-image {
-                grid-column: span 2 / auto;
-            }
-      body {
-          font-family: Arial, sans-serif;
-          background-color: #dfb45d;
-          margin: 0;
-          padding: 20px;
-      }
-      .container {
-          max-width: 80%;
-          margin: 0 auto;
-          background: white;
-          padding: 20px;
-          border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          background-color: rgb(217, 217, 217);
-      }
-      h2 {
-          text-align: center;
-          color: #333;
-      }
-      .timeline {
-          position: relative;
-          padding: 20px 0;
-      }
-      .timeline-item {
-          margin-bottom: 20px;
-          padding-left: 20px;
-          border-left: 3px solid #007bff;
-      }
-      .timeline-item h3 {
-          margin: 0;
-          font-size: 18px;
-          color: #007bff;
-      }
-      .timeline-item h2 {
-          margin: 0;
-          font-size: 26px;
-          color: #003153;
-      }
-      .timeline-item p {
-          margin: 5px 0 0;
-          color: #555;
-      }
-      .image-row {
-      display: flex;
-      justify-content: center; /* Center the images */
-      gap: 20px; /* Space between images */
-      margin-top: 50px;
-    }
-
-    .image-row img {
-      width: 50%; /* Adjust as needed */
-      height: auto;
-      border-radius: 10px; /* Optional rounded corners */
-    }
+     
   </style>
   </head>
   <body>
@@ -134,12 +48,16 @@
         <h1 class="title">Dr. Kiran Khurshid</h1>
         <p class="section__text__p2">Acting as  Director General(DGM&E)</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('resume-example.pdf')"
-          >
+         
+
+
+          <button class="btn btn-color-2" onclick="openCV()">
             Download CV
           </button>
+
+
+
+
           <button class="btn btn-color-1" onclick="">
             Contact Info
           </button>
@@ -217,103 +135,32 @@
       </div>
     </section>
     
-    <section id="experience" style="margin-top: -20%;">
+    <div id="experience" style="margin-top: -20%;">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title" >Professional Profile</h1>
+      <div class="container">
       <div class="experience-details-container">
         <div class="about-containers">
-          <!-- <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />  
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div> -->
-          <div class="details-container" style="background-color: rgb(217, 217, 217); border: 1px solid black;">
+        <div class="details-container" style="background-color: rgb(217, 217, 217);">
             <h2 class="experience-sub-title">Organizations Served</h2>
             <div class="article-container">
-              <article>
-  <a href="https://dgme.punjab.gov.pk/" style="background-color: rgb(217, 217, 217);">
-    <img
-      src="dgmeLogo.jpg"
-      alt="Experience icon"
-      class="icon"
-      style="width: 45px; height: 45px;" 
-    />
-  </a>
-  <div>
-    <a href="https://dgme.punjab.gov.pk/" 
-       style="text-decoration: none; color: inherit; padding: 0;">
-      <h3 style="margin-left: -7px;">Director General (M&E), Lahore</h3>
-    </a>
-    <p class="padding-y">June 2024 to till Date</p>
-  </div>
-</article>
+      <article>
+        <a href="https://dgme.punjab.gov.pk/" style="background-color: rgb(217, 217, 217);">
+          <img
+            src="dgmeLogo.jpg"
+            alt="Experience icon"
+            class="icon"
+            style="width: 45px; height: 45px;" 
+          />
+        </a>
+        <div>
+          <a href="https://dgme.punjab.gov.pk/" 
+            style="text-decoration: none; color: inherit; padding: 0;">
+            <h3 style="margin-left: -7px;">Director General (M&E), Lahore</h3>
+          </a>
+          <p class="padding-y">June 2024 to till Date</p>
+        </div>
+      </article>
               <article>
                 <img
                   src="images.png"
@@ -516,13 +363,8 @@
           </div>
         </div>
       </div>
-      <img
-        src="arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
+      </div>
+    </div>
 
     <div class="container" style="margin-top: 25px;">
       <h2 style="font-size: 3rem;color: black;">Achievements & Recognitions</h2>
@@ -577,118 +419,237 @@
       </div>
   </div>
 
+
+ <div class="container" style="background-color: rgb(217, 217, 217); margin-top: 50px; margin-bottom: 50px;">
+  <h2 style="font-size: 3rem;color: black;">Publications & Articles</h2>
+
+  <div class="container-card">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="img-wrapper" style="--bg:url('bookcover1.jpg')">
+        <img src="bookcover1.jpg" alt="Book 1">
+      </div>
+      <h3>Sadequain Gallery: An ode to the Artist</h3>
+      <p>Publish Year: 2025</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="img-wrapper" style="--bg:url('bookcover2.jpg')">
+        <img src="bookcover2.jpg" alt="Book 2">
+      </div>
+      <h3>National Management Course: A Journey Together</h3>
+      <p>Publish Year: 2025</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="img-wrapper" style="--bg:url('bookcover3.jpg')">
+        <img src="bookcover3.jpg" alt="Book 3">
+      </div>
+      <h3>Pakistan Administrative Staff College: Rise of a Premier Civil Service Training Institution</h3>
+      <p>Publish Year: 2025</p>
+    </div>
+<!-- Card 4 -->
+    <div class="card"> 
+      <div class="img-wrapper" style="--bg:url('bookcover5.jpg')">
+        <img src="bookcover5.jpg" alt="Book 5" >
+      </div>
+      <h3>A Collection of Delegation of Powers Notifications of the Cooperatives Department Punjab</h3>
+      <p>Publish Year: 2024</p>
+    </div>
+    <!-- Card 5 -->
+    <div class="card">
+      <div class="img-wrapper" style="--bg:url('bookcover4.jpg')">
+        <img src="bookcover4.jpg" alt="Book 4">
+      </div>
+      <h3>A Compendium of Standing Orders and Directions under sections 44-D of the Cooperative Societies Act, 1925</h3>
+      <p>Publish Year: 2023</p>
+    </div>
+
+    
+
+    <!-- Card 6 -->
+    <div class="card">
+      <div class="img-wrapper" style="--bg:url('bookcover6.jpg')">
+        <img src="bookcover6.jpg" alt="Book 6" >
+      </div>
+      <h3>An Anthology on the properties of the Cooperatives institutions in Punjab</h3>
+      <p>Publish Year: 2020</p>
+    </div>
+    <!-- Card 7 -->
+ <div class="card" onclick="openDSpace()">
+  <div class="img-wrapper" style="--bg:url('paperPublishBg.jpg')">
+    <img src="paperPublish.png" alt="paperPublish" >
+  </div>
+  <h3 class="clickable">Political Economy of Growth: An Evaluation of Revenue Department/Administration with Special Focus on District Faisalabad</h3>
+  <p>Publish Year: 2018</p>
+</div>
+
+    <!-- Card 8 -->
+    <div class="card" onclick="opennewLetterPDF()">
+      <div class="img-wrapper" style="--bg:url('annualReport2016-17.jpg')">
+        <img src="annualReport2016-17.jpg" alt="annualReport2016-17" >
+      </div>
+      <h3 class="clickable">Annual Report 2016-17: Child Protection & Welfare Bureau</h3>
+      <p>Publish Year: 2026-17</p>
+    </div>
+
+    <!-- Card 8 -->
+ <div class="card" onclick="opennewLetterPDF()">
+  <div class="img-wrapper" style="--bg:url('newsLetter.jpg')">
+    <img src="newsLetter.jpg" alt="newsLetter" >
+  </div>
+  <h3 class="clickable">Monitoring Progress, Tracking Success: NewsLetter (DGM&E)</h3>
+  <p>Publish Year: 2025</p>
+</div>
+
+
+
+<script>
+
+</script>
+
+   
+
+  </div>
+</div>
+        
+
+
+
+
   <div class="container" style="margin-top: 20px;">
     <h2 style="font-size: 3rem;color: black;">Publications & Articles</h2>
     <div class="timeline">
       <div class="timeline-item">
+  <h2 style="padding-bottom: 10px;">Books Launched at NSPP</h2>
+  <div>
+    <div class="sg-header-section">
+      <h1 class="sg-heading">Sadequain Gallery - An Ode to the Artist</h1>
+      <div class="sg-button-group">
+        <a href="https://www.facebook.com/share/18vXyNsxLn/?mibextid=wwXIfr"
+          target="_blank" class="sg-btn sg-fb-btn">Facebook Post</a>
+        <a href="https://nspp.gov.pk/launch-exlusive-book-sadeqain-gallery/"
+          target="_blank" class="sg-btn sg-site-btn">NSPP Book Launch Event</a>
+      </div>
+    </div>
 
-        <h2 style="text-decoration: underline; padding-bottom: 4px;">Book Launched at NSPP</h2>
-        <h3>March 2025 :  Sadequain Gallery - An Ode to the Artist  </h3>
-        <p style="margin-top: 20px;"><a href="https://www.facebook.com/share/18vXyNsxLn/?mibextid=wwXIfr" >https://www.facebook.com/share/18vXyNsxLn/?mibextid=wwXIfr</a></p>
-        <p style="margin-top: 40px;"> <a href="https://www.facebook.com/share/18vXyNsxLn/?mibextid=wwXIfr">https://nspp.gov.pk/launch-exlusive-book-sadeqain-gallery/</a></p>
-        <p style="margin-top: 20px;">I am absolutely delighted to share the momentous occasion of the inauguration of my book, Sadequain Gallery –
-           An Ode to the Artist, in a prestigious ceremony held at the esteemed National School of Public Policy on 20th March 
-           2025. People from the art, academia and civil service attended the event. It is both a great privilege and an
-            immense honour to have been entrusted with this endeavour by the Honourable Rector, Dr Ijaz Munir. Both the 
-            establishment of Sadequain Gallery by him in January 2023 and now documentation of this book on 20th March 
-            2025 are testament to his dedication to the art and culture.</p>
-                <img src="gallery.jpeg" alt="First Image" style="width: 100%;height: 700px;">
-                <img src="book7.jpeg" alt="Third Image" style="width: 100%;">
-                <img src="gallery4.jpeg" alt="Second Image" style="width: 100%;">
+    <h3 style="margin-top: 20px;">About the Book</h3>
+    <p style="margin-top: 10px; text-align: justify;">
+      I am absolutely delighted to share the momentous occasion of the inauguration of my book,
+      <b>Sadequain Gallery – An Ode to the Artist</b>, in a prestigious ceremony held at the esteemed
+      National School of Public Policy on 20th March 2025.People from the art, academia and civil service attended the event. It is both a great privilege and an immense honour to have been entrusted with this endeavour by the Honourable Rector, Dr Ijaz Munir. Both the establishment of Sadequain Gallery by him in January 2023 and now documentation of this book on 20th March 2025 are testament to his dedication to the art and culture.
+    </p>
 
-                <div class="image-row">
-                  <img src="gallery5.jpeg" alt="First Image">
-                  <img src="gallery6.jpeg" alt="Second Image">
-                </div>
-                <div class="image-row">
-                  <img src="gallery7.jpeg" alt="First Image" style="height: 550px;">
-                  <img src="gallery3.jpeg" alt="Second Image" style="height: 550px;">
-                </div>       
-      </div>   
+    <!-- Responsive 2-per-row Gallery -->
+    <div class="image-row">
+      <img src="gallery.jpeg" alt="Gallery Main">
+      <img src="book7.jpeg" alt="Book Image">
+    </div>
+    <div class="image-row">
+      <img src="gallery4.jpeg" alt="Gallery Side">
+      <img src="gallery5.jpeg" alt="Gallery Art">
+      </div>
+   <div class="special-gallery">
+  <div class="left-column">
+    <img src="gallery6.jpeg" alt="Gallery Display">
+    <img src="gallery3.jpeg" alt="Exhibition">
+  </div>
+  <div class="right-column">
+    <img src="gallery7.jpeg" alt="Artwork">
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+
+       
       <div class="timeline-item">
-        <div>
-        </div>
-        <h3 style="text-decoration: underline;">Book Launched at NSPP</h3>
-        <h3>April 29 2025 : A Journey Together</h3>
-        <p style="margin-top: 20px;"><a href="https://youtu.be/dhC6daRvMaQ" >https://youtu.be/dhC6daRvMaQ</a></p>
-        <p style="margin-top: 20px;text-align: justify;">NSPP / Book Launch Ceremony
-          Book Launch Ceremony of Author Kiran Khurshid’s "National Management Course – A Journey Together" Held at National School of Public Policy
-          NSPP has been rendering valuable services for national development since its inception. The author’s book is commendable. – Rector Dr. Ijaz Munir
-          Lahore, April 29 (APP):
-          A grand launch ceremony was held on Tuesday at the National School of Public Policy (NSPP) for the 
-          book "National Management Course – A Journey Together" by author Kiran Khurshid. The book was written at the suggestion of Rector NSPP,
-           Dr. Ijaz Munir, with the aim of highlighting the institution's role in the training of civil service officers. This publication is part 
-           of a series of initiatives led by the Rector.
-          The event featured speeches by Rector Dr. Ijaz Munir, former Dean of the Staff College Naeem Aslam, former Principal of the Pakistan 
-          Administrative Staff College Khalid Mahmood, and former Federal Secretary Suhail Ahmed, who all shared their views on the book. Faculty 
-          members, instructors, and officers from the Staff College also attended the ceremony.</p>
-          div class="image-row">
-          <img src="book0.jpeg" alt="First Image" style="width: 100%;">
-          <img src="books2.jpeg" alt="Second Image" style="width: 100%;">
-          <img src="book1.jpeg" alt="Second Image" style="width: 100%;">
-          <img src="Poetry.jpeg" alt="Second Image" style="width: 100%;">
-        </div>
-        <div class="image-row">
-          <img src="book2.jpeg" alt="First Image">
-          <img src="book3.jpeg" alt="Second Image">
-        </div>
-        <div class="image-row">
-          <img src="book4.jpeg" alt="First Image">
-          <img src="book5.jpeg" alt="Second Image">
-        </div>
-        <div class="image-row">
-          <img src="book6.jpeg" alt="First Image">
-          <img src="book7.jpeg" alt="Second Image">
-        </div>
-      </div>   
+  <div class="sg-header-section">
+    <h1 class="sg-heading">April 29 2025 : A Journey Together</h1>
+    <div class="sg-button-group">
+      <a href="https://youtu.be/dhC6daRvMaQ" target="_blank" class="sg-btn sg-yt-btn">Book Briefing Video</a>
+    </div>
+  </div>
+
+  <h3 style="margin-top: 20px;">About the Book</h3>
+  <p style="margin-top: 10px;text-align: justify;">
+    NSPP / Book Launch Ceremony Book Launch Ceremony of Author Kiran Khurshid’s <b> "National Management Course – A Journey Together" </b> Held at National School of Public Policy NSPP has been rendering valuable services for national development since its inception. The author’s book is commendable. – Rector Dr. Ijaz Munir Lahore, April 29 (APP): A grand launch ceremony was held on Tuesday at the National School of Public Policy (NSPP) for the book "National Management Course – A Journey Together" by author Kiran Khurshid. The book was written at the suggestion of Rector NSPP, Dr. Ijaz Munir, with the aim of highlighting the institution's role in the training of civil service officers. This publication is part of a series of initiatives led by the Rector. The event featured speeches by Rector Dr. Ijaz Munir, former Dean of the Staff College Naeem Aslam, former Principal of the Pakistan Administrative Staff College Khalid Mahmood, and former Federal Secretary Suhail Ahmed, who all shared their views on the book. Faculty members, instructors, and officers from the Staff College also attended the ceremony.
+  </p>
+
+  <div class="image-row">
+    <img src="book0.jpeg" alt="First Image">
+    <img src="books2.jpeg" alt="Second Image">
+  </div>
+  <div class="image-row">
+    <img src="book1.jpeg" alt="Third Image">
+    <img src="Poetry.jpeg" alt="Fourth Image">
+  </div>
+  <div class="image-row">
+    <img src="book2.jpeg" alt="Image">
+    <img src="book3.jpeg" alt="Image">
+  </div>
+  <div class="image-row">
+    <img src="book4.jpeg" alt="Image">
+    <img src="book5.jpeg" alt="Image">
+  </div>
+  <div class="image-row">
+    <img src="book6.jpeg" alt="Image">
+    <img src="book7.jpeg" alt="Image">
+  </div>
+</div>
+   
       <div class="timeline-item">
-        <div>
-        </div>
-        <h3 style="text-decoration: underline;">Book Launched at NSPP</h3>
-        <h3>May 20 2025 : Rise of a Premier Civil Service Training Institute (1960–2025)</h3>
-        <p style="margin-top: 20px;"><a href="https://www.youtube.com/watch?v=-JqySsrvhfk" >https://www.youtube.com/watch?v=-JqySsrvhfk</a></p>
-        <p style="margin-top: 20px;"><a href="https://www.facebook.com/share/1KugaBmK1Q/?mibextid=wwXIfr" >https://www.facebook.com/share/1KugaBmK1Q/?mibextid=wwXIfr</a></p>
-        <p style="margin-top: 20px;text-align: justify;">Pakistan Administrative Staff College: Rise of a Premier 
-          Civil Service Training Institute (1960–2025)”. All praise and gratitude are due to the Almighty Allah, 
-          who graciously endowed me with the fortitude to undertake a task of considerable significance and honour 
-          — that of authoring a trilogy of publications for the esteemed National Institute of Public Policy. 
-          These include Pakistan Administrative Staff College: Rise of a Premier Civil Services Training Institution
-           (1960–2025), following my earlier works, Sadequain – An Ode to the Artist and National Management Course: 
-           A Journey Together- all these publications completed within 15 months. 
-          I am profoundly indebted to the honourable Rector, Dr Ijaz Munir Sahib, whose enlightened and visionary 
-          stewardship afforded me the rare privilege of contributing intellectually to this noble enterprise — the 
-          chronicling of the rich legacy, institutional memory, and oft-unspoken narrative of this venerable institution.
-          The experience of penning these volumes has granted me a deeper appreciation of the majesty and gravitas 
-          of this distinguished establishment. It has, in turn, inspired within me a renewed sense of duty — to become
-           a more effective and purposeful instrument within the great machinery of the bureaucracy, working steadfastly 
-           to propel our beloved Pakistan toward a future marked by sustainable progress and enduring prosperity.</p>
-          div class="image-row">
-          <img src="booke.jpeg" alt="First Image" style="width: 100%;">
-          <img src="booke2.jpeg" alt="Second Image" style="width: 100%;">
-          <img src="booke4.jpeg" alt="Second Image" style="width: 100%;">
-          <img src="booke3.jpeg" alt="Second Image" style="width: 100%;">
-        </div>
-        <div class="image-row">
-          <img src="booke1.jpeg" alt="First Image">
-          <img src="booke5.jpeg" alt="Second Image">
-        </div>
-        <div class="image-row">
-          <img src="booke6.jpeg" alt="First Image">
-          <img src="booke7.jpeg" alt="Second Image">
-        </div>
-        <div class="image-row">
-          <img src="booke8.jpeg" alt="First Image">
-          <img src="booke9.jpeg" alt="Second Image">
-        </div>
-        <div class="image-row">
-          <img src="booke10.jpeg" alt="First Image">
-          <img src="booke11.jpeg" alt="Second Image">
-        </div>
-        <div class="image-row">
-          <img src="booke13.jpeg" alt="First Image">
-          <img src="booke12.jpeg" alt="Second Image">
-        </div>
-        <div class="timeline-item">
+  <div class="sg-header-section">
+    <h1 class="sg-heading">May 20 2025 : Rise of a Premier Civil Service Training Institute (1960–2025)</h1>
+    <div class="sg-button-group">
+      <a href="https://www.youtube.com/watch?v=-JqySsrvhfk" target="_blank" class="sg-btn sg-yt-btn">Book Briefing Video</a>
+      <a href="https://www.facebook.com/share/1KugaBmK1Q/?mibextid=wwXIfr" target="_blank" class="sg-btn sg-fb-btn">Facebook Post</a>
+    </div>
+  </div>
+
+  <h3 style="margin-top: 20px;">About the Book</h3>
+  <p style="margin-top: 10px;text-align: justify;">
+    Pakistan Administrative Staff College: Rise of a Premier Civil Service Training Institute (1960–2025)”. All praise and gratitude are due to the Almighty Allah, who graciously endowed me with the fortitude to undertake a task of considerable significance and honour — that of authoring a trilogy of publications for the esteemed National Institute of Public Policy. These include Pakistan Administrative Staff College: Rise of a Premier Civil Services Training Institution (1960–2025), following my earlier works, Sadequain – An Ode to the Artist and National Management Course: A Journey Together- all these publications completed within 15 months. I am profoundly indebted to the honourable Rector, Dr Ijaz Munir Sahib, whose enlightened and visionary stewardship afforded me the rare privilege of contributing intellectually to this noble enterprise — the chronicling of the rich legacy, institutional memory, and oft-unspoken narrative of this venerable institution. The experience of penning these volumes has granted me a deeper appreciation of the majesty and gravitas of this distinguished establishment. It has, in turn, inspired within me a renewed sense of duty — to become a more effective and purposeful instrument within the great machinery of the bureaucracy, working steadfastly to propel our beloved Pakistan toward a future marked by sustainable progress and enduring prosperity. </p>
+
+  <div class="image-row">
+    <img src="booke.jpeg" alt="First Image">
+    <img src="booke2.jpeg" alt="Second Image">
+  </div>
+    <div class="image-row">
+    <img src="booke4.jpeg" alt="Third Image">
+    <img src="booke3.jpeg" alt="Fourth Image">
+  </div>
+
+  <div class="image-row">
+    <img src="booke1.jpeg" alt="Image">
+    <img src="booke5.jpeg" alt="Image">
+  </div>
+  <div class="image-row">
+    <img src="booke6.jpeg" alt="Image">
+    <img src="booke7.jpeg" alt="Image">
+  </div>
+  <div class="image-row">
+    <img src="booke8.jpeg" alt="Image">
+    <img src="booke9.jpeg" alt="Image">
+  </div>
+  <div class="image-row">
+    <img src="booke10.jpeg" alt="Image">
+    <img src="booke11.jpeg" alt="Image">
+  </div>
+  <div class="image-row">
+    <img src="booke13.jpeg" alt="Image">
+    <img src="booke12.jpeg" alt="Image">
+  </div>
+</div>
+
+        <br/>
+        <h2 style="padding-bottom: 10px;">Publications & Articles List</h2>
+      <div class="timeline-item">
           <h3>2004</h3>
           <p>Dec 2004	Multinational Corporations as Corporate Citizens, printed in Foreign Affair Digest, Lahore</p>
       </div>
@@ -724,97 +685,29 @@
           <h3>2018</h3>
           <p>A Compendium of Standing Orders and Directions under sections 44-D of the Cooperative Societies Act, 1925</p>
       </div>
+      <div class="timeline-item">
+          <h3>2025</h3>
+          <p>A Completion of “Sadequain Gallery: An ode to the Artist”</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2025</h3>
+          <p>A Completion of “National Management Course: A Journey Together”</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2025</h3>
+          <p>A Completion of “Pakistan Administrative Staff College: Rise of a Premier Civil Service Training
+Institution”</p>
+      </div>
+      <div class="timeline-item">
+          <h3>2025</h3>
+          <p>DGM&E Newsletter </p>
+      </div>
   </div>
 </div>
       </div>
 
       
-  <!-- <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/project-1.png"
-              alt="Project 1"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/project-2.png"
-              alt="Project 2"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/project-3.png"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#contact'"
-    />
-  </section> -->
+ 
 
     <section id="contact">
       
