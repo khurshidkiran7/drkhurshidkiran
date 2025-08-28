@@ -1,8 +1,15 @@
+// function toggleMenu() {
+//   const menu = document.querySelector(".menu-links");
+//   const icon = document.querySelector(".hamburger-icon");
+//   menu.classList.toggle("open");
+//   icon.classList.toggle("open");
+// }
+
 function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
+  const hamburger = document.querySelector(".hamburger");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  hamburger.classList.toggle("open");
+  mobileMenu.classList.toggle("active");
 }
 function openCV() {
   window.open("Resume.pdf", "_blank"); // open in new tab

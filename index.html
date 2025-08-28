@@ -12,37 +12,43 @@
   </style>
   </head>
   <body>
-    <nav id="desktop-nav">
-      <!-- <div class="logo">Dr. Kiran Khurshid</div> -->
-      <div>
-        <ul class="nav-links">
-          <li style="font-size: 2rem;"><a href="#about" style="color: rgb(255, 255, 255);border-radius: 50px;">About</a></li>
-          <li style="font-size: 2rem;"><a href="#experience" style="color: rgb(255, 255, 255);border-radius: 50px;">Experience</a></li>
-          <li style="font-size: 2rem;"><a href="#ach&rec" style="color: rgb(255, 255, 255);border-radius: 50px;">Achievements and Distinctions</a></li>
-          <li style="font-size: 2rem;"><a href="#pub&art" style="color: rgb(255, 255, 255);border-radius: 50px;">Publications & Articles</a></li>
-          <li style="font-size: 2rem;"><a href="#gallery" style="color: rgb(255, 255, 255);border-radius: 50px;">Gallery</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Dr. Kiran Khurshid</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#ach&rec" onclick="toggleMenu()">Achievements & Distinctions</a></li>
-          <li><a href="#pub&art" onclick="toggleMenu()">Publications & Articles </a></li>
-        </div>
-      </div>
-    </nav>
+
+    <nav class="navbar">
+  <div class="logo">Dr. Kiran Khurshid</div>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#ach&rec">Achievements</a></li>
+    <li><a href="#pub&art">Publications</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+  </ul>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<ul class="mobile-menu">
+  <li><a href="#about" onclick="toggleMenu()">About</a></li>
+  <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+  <li><a href="#ach&rec" onclick="toggleMenu()">Achievements</a></li>
+  <li><a href="#pub&art" onclick="toggleMenu()">Publications</a></li>
+  <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+</ul>
+
+
+
+
+
+
+    <!-- Profile Section -->
     <section id="profile">
       <div class="section__pic-container">
-<img src="profile-pic.jpeg" alt="John Doe profile picture" />      </div>
+        <img src="profile-pic.jpeg" alt="John Doe profile picture" />      </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Dr. Kiran Khurshid</h1>
@@ -89,55 +95,47 @@
         </div>
       </div>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img style="width: 200px;height: 200px;margin-top: px;"
-            src="profile-pic.jpeg"
-            alt="Profile picture"
-            class="about-pic"
-          />
+<!-- Profile Section End -->
+
+
+  <!-- About Section -->
+<section id="about-section">
+  <p class="heading__subtitle">Get To Know More</p>
+  <h1 class="heading_title">About Me</h1>
+  <div class="about-section__container">
+    <div class="about-section__pic-container">
+      <img
+        src="profile-pic.jpeg"
+        alt="Profile picture"
+        class="about-section__pic"
+      />
+    </div>
+    <div class="about-section__details-wrapper">
+      <div class="about-section__cards-container">
+        <div class="about-section__card">
+          <img src="experience.png" alt="Experience icon" class="about-section__icon" />
+          <h3>Civil Service</h3>
+          <p>Currently serving as <br />DGM&E since 31-May-2024</p>
         </div>
-        <div class="about-details-container">
-          <div class="about-containers" style="margin-top: -20%;">
-            <div class="details-container" style="background-color: rgb(217, 217, 217);">
-              <img
-                src="experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Civil Service</h3>
-              <p>Currently serving as <br />DGM&E for almost 1 year</p>
-            </div>
-            <div class="details-container" style="background-color: rgb(217, 217, 217);width: 800px;">
-              <img
-                src="education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>PhD in Political Sciences<br />M. Phil in Political Sciences <br/> Master of Arts in Political Sciences <br/> Graduation in Political Sciences</p>
-            </div>
-          </div>
-          <!-- <div class="text-container" >
-            <p style="color: rgb(0, 0, 0);">
-              I am Dr. Kiran Khurshid, a dedicated academic and researcher in Political Science. 
-              I earned my Ph.D. from Government College University, Lahore, in 2018, focusing on 
-              an evaluation of land revenue. My M.Phil. research explored Dependencia: A Case Study 
-              of Pakistan (1981-1991), and I hold a Master of Arts in Political Science from the same 
-              institution. My academic journey has been centered on governance, international relations, 
-              and political thought, shaping my expertise in political analysis and research.
-            </p>
-          </div> -->
+        <div class="about-section__card">
+          <img src="education.png" alt="Education icon" class="about-section__icon" />
+          <h3>Education</h3>
+          <p>
+            PhD in Political Science
+          </p>
+          <p>
+            Masters in Public Policy & Management (MPPM) University of Melbourne
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+<!-- About Section End -->
     
-    <div id="experience" style="margin-top: -20%;">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title" >Professional Profile</h1>
+    <div id="experience" style="margin-top: -20px;">
+      <p class="heading__subtitle">Explore My</p>
+      <h1 class="heading_title" >Professional Profile</h1>
       <div class="container">
       <div class="experience-details-container">
         <div class="about-containers">
@@ -422,8 +420,25 @@
 
  <div id="pub&art" class="container" style="background-color: rgb(217, 217, 217); margin-top: 50px; margin-bottom: 50px;">
   <h2 style="font-size: 3rem;color: black;">Publications & Articles</h2>
-
+ <h4 class="pub-subtitle">Coffee Table Books</h4>
   <div class="container-card">
+   
+    <!-- Card 13 -->
+    <div class="card" >
+      <div class="img-wrapper" style="--bg:url('RevenueFaislabad.jpg')">
+        <img src="RevenueFaislabad.jpg" alt="newsLetter" >
+      </div>
+      <h3 >A Catalogue of Revenue Estates In Tehsil Sadar Faisalabad With Site Maps</h3>
+      <p>Publish Year: 2009</p>
+    </div>
+   <!-- Card 11 -->
+    <div class="card" >
+      <div class="img-wrapper" style="--bg:url('civilService-1601-2011.jpg')">
+        <img src="civilService-1601-2011.jpg" alt="newsLetter" >
+      </div>
+      <h3 >A Treatise on the Civil Service of Pakistan: The Structural-Functional History (1607-2011)</h3>
+      <p>Publish Year: 2011</p>
+    </div>
 
     <!-- Card 1 -->
    <div class="card" data-target="book1">
@@ -449,14 +464,141 @@
       <h3 class="clickable">Pakistan Administrative Staff College: Rise of a Premier Civil Service Training Institution</h3>
       <p>Publish Year: 2025</p>
     </div>
-<!-- Card 4 -->
+
+
+
+    </div>
+    <h4 class="pub-subtitle">Research Articles</h2>
+
+    <div class="container-card">
+
+
+       <!-- Card 14 -->
+    <div class="card" >
+      <div class="img-wrapper" style="--bg:url('currentAffair.jpg')">
+        <img src="currentAffair.jpg" alt="newsLetter" >
+      </div>
+      <h3 >Multinational Corporation as Corporate Citizens</h3>
+      <p>Publish Year: December, 2004</p>
+    </div>
+
+
+    
+         <!-- Card 14 -->
+    <div class="card" >
+      <div class="img-wrapper" style="--bg:url('currentAffair.jpg')">
+        <img src="currentAffair2005.jpg" alt="newsLetter" >
+      </div>
+      <h3 >Foreign Aid and Its Implications for Pakistan</h3>
+      <p>Publish Year: March, 2005</p>
+    </div>
+    <!-- Card 7 -->
+        <div class="card" onclick="openDSpace()">
+          <div class="img-wrapper" style="--bg:url('paperPublishBg.jpg')">
+            <img src="paperPublish.png" alt="paperPublish" >
+          </div>
+          <h3 class="clickable">Political Economy of Growth: An Evaluation of Revenue Department/Administration with Special Focus on District Faisalabad</h3>
+          <p>Publish Year: 2018</p>
+        </div>
+        
+        
+
+
+        <div ></div>
+        <div ></div>
+    </div>
+
+ <h4 class="pub-subtitle"> Reports</h4>
+  <div class="container-card">
+
+    <!-- Card 12 -->
+    <div class="card" >
+      <div class="img-wrapper" style="--bg:url('TMASheikhupura.jpg')">
+        <img src="TMASheikhupura.jpg" alt="newsLetter" >
+      </div>
+      <h3 >Annual Report 2011-2012 : Tehsil Municipal Administration Sheikhupura</h3>
+      <p>Publish Year: 2012</p>
+    </div>
+     <!-- Card 8 -->
+    <div class="card" onclick="openannualreportPDF()">
+      <div class="img-wrapper" style="--bg:url('annualReport-2016-17new.jpg')">
+        <img src="annualReport-2016-17new.jpg" alt="annualReport2016-17" >
+      </div>
+      <h3 class="clickable">Annual Report 2016-17: Child Protection & Welfare Bureau</h3>
+      <p>Publish Year: 2017</p>
+    </div>
+   
+    
+        <!-- Card 10 -->
+    <div class="card" >
+      <div class="img-wrapper" style="--bg:url('progressReport2018-19.jpg')">
+        <img src="progressReport2018-19.jpg" alt="newsLetter" >
+      </div>
+      <h3 >Progress Report 2018-2019: Reminiscence of Punjab Health Foundation</h3>
+      <p>Publish Year: 2019</p>
+    </div>
+    <div></div>
+   </div>
+    <h4 class="pub-subtitle">NewsLetter</h4>
+    <div class="container-card">
+      <!-- Card 9 -->
+    <div class="card" onclick="opennewLetterPDF()">
+      <div class="img-wrapper" style="--bg:url('newsLetter.jpg')">
+        <img src="newsLetter.jpg" alt="newsLetter" >
+      </div>
+      <h3 class="clickable">Monitoring Progress, Tracking Success: NewsLetter (DGM&E)</h3>
+      <p>Publish Year: 2025</p>
+    </div>
+
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+     <h4 class="pub-subtitle">Thesis</h4>
+    <div class="container-card">
+       <!-- Card 5 -->
+    <div class="card">
+      <div class="img-wrapper" style="--bg:url('bookcover4.jpg')">
+        <!-- <img src="bookcover4.jpg" alt="Book 4"> -->
+      </div>
+      <h3>Mphil Thesis Dependencia: A case Study of Pakistan (1979-2003)</h3>
+      <p>Publish Year: 2003</p>
+    </div>
+    <!-- Card 4 -->
     <div class="card"> 
       <div class="img-wrapper" style="--bg:url('bookcover5.jpg')">
-        <img src="bookcover5.jpg" alt="Book 5" >
+        <!-- <img src="bookcover5.jpg" alt="Book 5" > -->
       </div>
-      <h3>A Collection of Delegation of Powers Notifications of the Cooperatives Department Punjab</h3>
-      <p>Publish Year: 2024</p>
+      <h3>Political Economy of Growth: An Evaluation of Revenue Department / Administration with Special Focus on District Faisalabad </h3>
+      <p>Publish Year: 2010</p>
     </div>
+   
+    <div></div>
+    <div></div>
+
+      </div>
+    <h4 class="pub-subtitle">Other Publications</h4>
+    <div class="container-card">
+
+        <!-- Card 14 -->
+    <div class="card" >
+      <div class="img-wrapper" style="--bg:url('gazetterNative.jpg')">
+        <img src="gazetterNative.jpg" alt="newsLetter" >
+      </div>
+      <h3 >A Gazetteer By the Native</h3>
+      <p>Publish Year: 2009</p>
+    </div>
+      <!-- Card 6 -->
+    <div class="card">
+      <div class="img-wrapper" style="--bg:url('bookcover6.jpg')">
+        <img src="bookcover6.jpg" alt="Book 6" >
+      </div>
+      <h3>An Anthology on the properties of the Cooperatives institutions in Punjab</h3>
+      <p>Publish Year: 2020</p>
+    </div>
+
+
     <!-- Card 5 -->
     <div class="card">
       <div class="img-wrapper" style="--bg:url('bookcover4.jpg')">
@@ -465,43 +607,21 @@
       <h3>A Compendium of Standing Orders and Directions under sections 44-D of the Cooperative Societies Act, 1925</h3>
       <p>Publish Year: 2023</p>
     </div>
-
+<!-- Card 4 -->
+    <div class="card"> 
+      <div class="img-wrapper" style="--bg:url('bookcover5.jpg')">
+        <img src="bookcover5.jpg" alt="Book 5" >
+      </div>
+      <h3>A Collection of Delegation of Powers Notifications of the Cooperatives Department Punjab</h3>
+      <p>Publish Year: 2024</p>
+    </div>
     
-
-    <!-- Card 6 -->
-    <div class="card">
-      <div class="img-wrapper" style="--bg:url('bookcover6.jpg')">
-        <img src="bookcover6.jpg" alt="Book 6" >
-      </div>
-      <h3>An Anthology on the properties of the Cooperatives institutions in Punjab</h3>
-      <p>Publish Year: 2020</p>
-    </div>
-    <!-- Card 7 -->
- <div class="card" onclick="openDSpace()">
-  <div class="img-wrapper" style="--bg:url('paperPublishBg.jpg')">
-    <img src="paperPublish.png" alt="paperPublish" >
-  </div>
-  <h3 class="clickable">Political Economy of Growth: An Evaluation of Revenue Department/Administration with Special Focus on District Faisalabad</h3>
-  <p>Publish Year: 2018</p>
+    
+     
+  
+   
 </div>
 
-    <!-- Card 8 -->
-    <div class="card" onclick="openannualreportPDF()">
-      <div class="img-wrapper" style="--bg:url('annualReport2016-17.jpg')">
-        <img src="annualReport2016-17.jpg" alt="annualReport2016-17" >
-      </div>
-      <h3 class="clickable">Annual Report 2016-17: Child Protection & Welfare Bureau</h3>
-      <p>Publish Year: 2026-17</p>
-    </div>
-
-    <!-- Card 8 -->
- <div class="card" onclick="opennewLetterPDF()">
-  <div class="img-wrapper" style="--bg:url('newsLetter.jpg')">
-    <img src="newsLetter.jpg" alt="newsLetter" >
-  </div>
-  <h3 class="clickable">Monitoring Progress, Tracking Success: NewsLetter (DGM&E)</h3>
-  <p>Publish Year: 2025</p>
-</div>
 
 
 
@@ -775,7 +895,7 @@ Institution”</p>
           <h3>Video For Introduciton of RTMES & Media News</h3>
         <p style="margin-top: 20px;"><a href="https://youtu.be/KFW-ukFdU8I" >https://youtu.be/KFW-ukFdU8I</a></p>
         <p style="margin-top: 40px;margin-bottom: 20px;"><a href="https://youtu.be/b1sxzNgabBM">https://youtu.be/b1sxzNgabBM</a></p>
-        <img src="rtme1.jpeg" alt="">
+        <!-- <img src="rtme1.jpeg" alt=""> -->
         <div class="image-row">
           <img src="news1.png" alt="First Image">
           <img src="news2.png" alt="Second Image">
