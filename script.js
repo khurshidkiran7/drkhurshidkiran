@@ -22,9 +22,12 @@ function openannualreportPDF() {
 }
 function openDSpace() {
   window.open(
-    "http://repository.pastic.gov.pk/jspui/handle/123456789/5910",
+    "http://repository.pastic.gov.pk/jspui/handle/123456789/5908",
     "_blank"
   );
+}
+function openPDF(link) {
+  window.open(link, "_blank"); // Opens in new tab
 }
 
 const cards = document.querySelectorAll(".card");
