@@ -13,36 +13,61 @@
   </head>
   <body>
 
-    <nav class="navbar">
-  <div class="logo">Dr. Kiran Khurshid</div>
+<nav class="navbar">
+    <div class="logo">Dr. Kiran Khurshid</div>
 
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#ach&rec">Achievements</a></li>
-    <li><a href="#pub&art">Publications</a></li>
-    <li><a href="#gallery">Gallery</a></li>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#ach&rec">Achievements</a></li>
+      <li><a href="#pub&art">Publications</a></li>
+       <!-- Resources Dropdown -->
+      <li class="dropdown" id="resourcesDropdown">
+        <a href="javascript:void(0)" onclick="toggleDropdown()" style="white-space: nowrap;">Resources ▾</a>
+
+        <div class="dropdown-content">
+          <a href="#link1" onclick="openCV()">Resume</a>
+          <a href="#link2" onclick="openPDF('Newsletter-DGME.pdf')">DGME NewsLetter</a>
+          <a href="#link3" onclick="openPDF('annualReport-2016-17.pdf')">Child Protection Report</a>
+          <a href="#link4" onclick="openPDF('MphilThesis.pdf')">M.Phil Thesis</a>
+          <a href="#link4" onclick="openPDF('https://drive.google.com/file/d/1JXSEUMyItY3W-Zy1OsO594Hg8k93VMj_/view?usp=drive_link')">Treatise on Civil Service</a>
+          <a href="https://drive.google.com/file/d/1p75UTX6VSn2ol46UbyNRlyDxB5Tw8Gq5/view?usp=drive_link" target="_blank">A Journey Together</a>
+          <a  href="https://drive.google.com/file/d/11pE4ahosXQ9h4EJ08fajU3cU2ccCQHZT/view?usp=drive_link" target="_blank">Rise of a Premier Civil</a>
+        </div>
+      </li>
+      <li><a href="#gallery">Gallery</a></li>
+
+     
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <ul class="mobile-menu">
+    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+    <li><a href="#ach&rec" onclick="toggleMenu()">Achievements</a></li>
+    <li><a href="#pub&art" onclick="toggleMenu()">Publications</a></li>
+    <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+
+    <!-- Mobile Resources Dropdown -->
+    <li class="mobile-dropdown">
+      <span class="mobile-dropdown-btn" onclick="toggleMobileDropdown()">Resources ▾</span>
+      <div class="mobile-dropdown-content" id="mobileDropdown">
+        <a href="#link1" onclick="openCV(); toggleMenu();">>Resource 1</a>
+        <a href="#link2" onclick="toggleMenu()">Resource 2</a>
+        <a href="#link3" onclick="toggleMenu()">Resource 3</a>
+        <a href="#link4" onclick="toggleMenu()">Resource 4</a>
+        <a href="#link5" onclick="toggleMenu()">Resource 5</a>
+        <a href="#link6" onclick="toggleMenu()">Resource 6</a>
+      </div>
+    </li>
   </ul>
-
-  <div class="hamburger" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</nav>
-
-<!-- Mobile Menu -->
-<ul class="mobile-menu">
-  <li><a href="#about" onclick="toggleMenu()">About</a></li>
-  <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-  <li><a href="#ach&rec" onclick="toggleMenu()">Achievements</a></li>
-  <li><a href="#pub&art" onclick="toggleMenu()">Publications</a></li>
-  <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
-</ul>
-
-
-
-
 
 
     <!-- Profile Section -->
@@ -98,7 +123,7 @@
 
 
   <!-- About Section -->
-<section id="about-section">
+<section id="about">
   <p class="heading__subtitle">Get To Know More</p>
   <h1 class="heading_title">About Me</h1>
   <div class="about-section__container">
@@ -998,40 +1023,58 @@ Institution”</p>
     
     </div>
 
-    <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">kkhurshid@student.unimelb.edu.au</a></p>
-        </div>
-        <div class="contact-info-container">
-          <!-- <img
-            src="linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          /> -->
-          <!-- <p><a href="https://www.linkedin.com/in/kiran-khurshid-929763234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></p> -->
-        </div>
+
+      <!-- Contact Section -->
+<div id="contact" class="contact-section">
+  <div>
+    <p class="subtitle">Get in Touch</p>
+    <h2 class="title">Contact Me</h2>
+
+    <div class="contact-grid">
+      <!-- Email -->
+      <div class="contact-item">
+        <img src="email.png" alt="Email Icon" class="contact-icon" />
+        <a href="mailto:kkhurshid@student.unimelb.edu.au">
+          kkhurshid@student.unimelb.edu.au
+        </a>
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Achievements & Distinctions</a></li>
-            <li><a href="#contact">Publications & Articles</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Dr. Kiran Khurshid. All Rights Reserved.</p>
-    </footer>
+
+      <!-- LinkedIn -->
+      <div class="contact-item">
+        <img src="linkedin.png" alt="LinkedIn Icon" class="contact-icon" />
+        <a href="https://www.linkedin.com/in/kiran-khurshid-929763234" target="_blank">
+          LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Navigation Links -->
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Achievements</a></li>
+        <li><a href="#contact">Publications</a></li>
+      </ul>
+    </div>
+
+    <!-- Divider Line -->
+    <div class="footer-divider"></div>
+
+    <!-- Copyright -->
+    <p class="copyright">
+      © 2025 <span>Dr. Kiran Khurshid</span>. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+
     <script src="script.js"></script>
   </body>
 </html>

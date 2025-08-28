@@ -11,8 +11,34 @@ function toggleMenu() {
   hamburger.classList.toggle("open");
   mobileMenu.classList.toggle("active");
 }
+
+function toggleMobileDropdown() {
+  const dropdown = document.getElementById("mobileDropdown");
+  dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+}
+
+function toggleDropdown() {
+  const dropdown = document.getElementById("resourcesDropdown");
+  dropdown.classList.toggle("active");
+}
+
+// Close dropdown if clicked outside
+document.addEventListener("click", function (e) {
+  const dropdown = document.getElementById("resourcesDropdown");
+  if (!dropdown.contains(e.target)) {
+    dropdown.classList.remove("active");
+  }
+});
+
+document
+  .querySelectorAll("#resourcesDropdown .dropdown-content a")
+  .forEach((link) => {
+    link.addEventListener("click", () => {
+      document.getElementById("resourcesDropdown").classList.remove("active");
+    });
+  });
 function openCV() {
-  window.open("Resume.pdf", "_blank"); // open in new tab
+  window.open("ResumeNew.pdf", "_blank"); // open in new tab
 }
 function opennewLetterPDF() {
   window.open("Newsletter-DGME.pdf", "_blank");
